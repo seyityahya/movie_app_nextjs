@@ -1,12 +1,13 @@
-import Header from "@/components/Header";
 import React from "react";
 import "./globals.css";
+import Provider from "./Provider";
 
 const Layout = ({ children }) => {
   return (
     <html lang="en">
-      <Header />
-      <body>{children}</body>
+      <body>
+        <Provider>{children}</Provider>
+      </body>
     </html>
   );
 };
