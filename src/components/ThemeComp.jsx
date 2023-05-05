@@ -13,8 +13,6 @@ const ThemeComp = () => {
 
   const themeMode = theme === "system" ? systemTheme : theme;
 
-  console.log("themeMode", themeMode);
-
   return (
     <div>
       {mounted &&
