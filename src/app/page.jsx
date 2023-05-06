@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "@/components/Header";
-import Tabs from "@/components/Tabs";
 import Movies from "@/components/Movies";
 
 const Page = async ({ searchParams }) => {
@@ -14,8 +12,6 @@ const Page = async ({ searchParams }) => {
 
   return (
     <div>
-      <Header />
-      <Tabs />
       <div className="flex items-center flex-wrap gap-3 justify-center">
         {data?.results?.map((dt, i) => (
           <Movies dt={dt} key={i} />
